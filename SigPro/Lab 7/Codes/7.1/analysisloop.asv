@@ -1,0 +1,14 @@
+function z= analysisloop(x,y)
+if (x==0)
+    for p=x:0.1:y
+        analysis([-1,p],[-(p^2),p]);
+        pause(0.5);
+    end
+
+else
+    for p=x:0.1:y
+    analysis([1],[1,-p]);
+    pause(0.5);
+    end
+end
+end
